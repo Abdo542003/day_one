@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-amiri: 'Amiri', serif;
+    --font-ruqaa: 'Aref Ruqaa Ink', cursive, serif;
+    --font-cairo: 'Cairo', sans-serif;
+    --font-tajawal: 'Tajawal', sans-serif;
+
+    /* Light Warm Palette */
+    --color-cream-bg: #FAF7F2;
+    --color-cream-card: #FFFDF9;
+    --color-beige-soft: #F4ECE1;
+    --color-rose-dusty: #C48B9F;
+    --color-pink-soft: #F9EFF2;
+    --color-gold-muted: #A67C37;
+    --color-brown-dark: #2A1810;
+    --color-brown-warm: #4A2E2B;
+    --color-burgundy-deep: #6E2034;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+    background-color: #FAF7F2;
+  }
+
+  body {
+    font-family: 'Amiri', serif;
+    background-color: #FAF7F2;
+    color: #2A1810;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-ruqaa {
+  font-family: 'Aref Ruqaa Ink', cursive, serif;
+}
+
+.font-cairo {
+  font-family: 'Cairo', sans-serif;
+}
+
+.font-tajawal {
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* Subtle Warm Paper Texture / Film Grain */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Subtle Warm Vignette */
+.cinematic-vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  background: radial-gradient(circle at center, transparent 65%, rgba(220, 205, 190, 0.3) 100%);
+}
+
+/* Elegant gold/burgundy text highlight */
+.burgundy-glow {
+  text-shadow: 0 0 20px rgba(110, 32, 52, 0.15);
+}
+
+.gold-glow {
+  text-shadow: 0 0 16px rgba(166, 124, 55, 0.2);
+}
+
+/* Custom warm scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C5B2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C48B9F;
+}

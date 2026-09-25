@@ -1,0 +1,6 @@
+{
+  "name": "من يوم ما جيتي لحياتي",
+  "description": "رسالة حب ومصالحة سينمائية غامرة - هصالحك كل يوم",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
